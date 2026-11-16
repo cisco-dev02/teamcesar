@@ -41,7 +41,7 @@ export default function Home() {
         <nav className="desktop-nav" aria-label="Navegação principal">
           <a href="#beneficios">Benefícios</a>
           <a href="#unidades">Unidades</a>
-          <a href="#professor">Professor</a>
+          <a href="#professor">Instrutor</a>
           <a href="#faq">Dúvidas</a>
         </nav>
         <WhatsAppButton href={wa(messages.general)}>Agendar aula</WhatsAppButton>
@@ -79,7 +79,7 @@ export default function Home() {
       <section className="trust-strip" aria-label="Informações rápidas">
         <div><b>5 a 11 anos</b><span>Faixa etária</span></div>
         <div><b>60 minutos</b><span>Duração da aula</span></div>
-        <div><b>2 unidades</b><span>Em Natal/RN</span></div>
+        <div><b>1 unidade</b><span>Em Natal/RN</span></div>
         <div><b>Aula gratuita</b><span>Primeiro contato</span></div>
       </section>
 
@@ -135,6 +135,7 @@ export default function Home() {
           <p>As aulas são ministradas pela Team Cesar Muay Thai em academias parceiras de Natal.</p>
         </div>
         <div className="location-grid">
+          {/* Unidade Viana temporariamente indisponível; manter o card para uso futuro.
           <article className="location-card">
             <div className="location-top">
               <span className="partner-label">LOCAL DAS AULAS</span>
@@ -149,22 +150,23 @@ export default function Home() {
             <WhatsAppButton href={wa(messages.viana)}>Tenho interesse nesta unidade</WhatsAppButton>
             <a className="map-link" href="https://www.google.com/maps/search/?api=1&query=Viana+Jiu-Jitsu+Av+Itapetinga+112+Natal+RN" target="_blank" rel="noreferrer">Ver localização no mapa ↗</a>
           </article>
+          */}
           <article className="location-card">
             <div className="location-top">
               <span className="partner-label">LOCAL DAS AULAS</span>
               <img src="/images/fifty-fifty-logo-reference.jpg" alt="Referência visual da marca Fifty Fifty Fight" />
             </div>
             <h3>Fifty Fifty Fight</h3>
-            <p className="address">Av. Presidente Dutra, 123 · Natal/RN</p>
+            <p className="address">Travessa Serra do Araguaia, 178a · Natal/RN</p>
             <div className="schedule">
-              <span>Dias de treino</span><strong>Segundas, quartas e sextas</strong>
-              <span>Horário</span><strong>18h</strong>
+              <span>Dias de treino</span><strong>Segundas e quartas</strong>
+              <span>Horário</span><strong>19h</strong>
             </div>
             <WhatsAppButton href={wa(messages.fifty)}>Tenho interesse nesta unidade</WhatsAppButton>
-            <a className="map-link" href="https://www.google.com/maps/search/?api=1&query=Fifty+Fifty+Fight+Av+Presidente+Dutra+123+Natal+RN" target="_blank" rel="noreferrer">Ver localização no mapa ↗</a>
+            <a className="map-link" href="https://www.google.com/maps/search/?api=1&query=Fifty+Fifty+Fight+Travessa+Serra+do+Araguaia+178a+Natal+RN" target="_blank" rel="noreferrer">Ver localização no mapa ↗</a>
           </article>
         </div>
-        <p className="location-footnote">A Team Cesar Muay Thai é responsável pelas aulas. Viana Jiu-Jitsu e Fifty Fifty Fight são os locais parceiros de treinamento.</p>
+        <p className="location-footnote">A Team Cesar Muay Thai é responsável pelas aulas, realizadas na Fifty Fifty Fight.</p>
       </section>
 
       <section className="personal-section">
@@ -202,20 +204,20 @@ export default function Home() {
 
       <section className="section coach-section" id="professor">
         <div className="coach-photo">
-          <img src="/images/cisco-portrait-clean.jpg" alt="Cisco Cruz, atleta da Team Cesar Muay Thai" />
+          <img src="/images/talandia.jpg" alt="Cisco Cruz, atleta da Team Cesar Muay Thai" />
           <span className="coach-photo-label">ATLETA · TEAM CESAR</span>
         </div>
         <div className="coach-copy">
           <SectionLabel>QUEM CONDUZ OS TREINOS</SectionLabel>
-          <h2>Conheça Cisco Cruz.</h2>
+          <h2>Instrutor Cisco Cruz</h2>
           <p>Praticante de Muay Thai há cerca de três anos, Cisco é atleta da modalidade, possui prajied azul e participou de seminários, incluindo experiências com professores tailandeses.</p>
           <p>Também participa do projeto social Movimento Kids, em parceria com a Igreja Life House, conectando o esporte a experiências de convivência e desenvolvimento infantil.</p>
           <div className="coach-facts">
-            <div><strong>3</strong><span>anos de prática, aproximadamente</span></div>
+            <div><strong>3</strong><span>anos de prática</span></div>
             <div><strong>3</strong><span>lutas realizadas</span></div>
             <div><strong>1</strong><span>cinturão conquistado</span></div>
           </div>
-          <a className="text-link" href="https://www.instagram.com/muaythai_cesar/" target="_blank" rel="noreferrer">Acompanhar no Instagram ↗</a>
+          <a className="text-link" href="https://www.instagram.com/cisco__cruz/?hl=pt-br" target="_blank" rel="noreferrer">Acompanhar no Instagram ↗</a>
         </div>
       </section>
 
@@ -287,7 +289,7 @@ export default function Home() {
         <div className="footer-brand">
           <img className="brand-logo" src="/logoteamcesar.png" alt="Team Cesar Muay Thai" />
         </div>
-        <p>Aulas de Muay Thai Kids em Natal/RN.<br />Viana Jiu-Jitsu e Fifty Fifty Fight são unidades parceiras.</p>
+        <p>Aulas de Muay Thai Kids em Natal/RN.<br />Treinos na Fifty Fifty Fight.</p>
         <div className="footer-links">
           <a href="https://www.instagram.com/muaythai_cesar/" target="_blank" rel="noreferrer">Instagram ↗</a>
           <a href={wa(messages.general)} target="_blank" rel="noreferrer">WhatsApp ↗</a>

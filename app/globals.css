@@ -83,6 +83,7 @@ img { display: block; max-width: 100%; }
 .small-note { color: #777f8b; font-size: 11px; line-height: 1.7; }
 .locations { max-width: none; background: var(--soft); padding-left: max(28px, calc((100vw - 1100px)/2)); padding-right: max(28px, calc((100vw - 1100px)/2)); }
 .location-grid { max-width: 1050px; margin: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.location-card:only-child { grid-column: 1 / -1; width: min(100%, 515px); justify-self: center; }
 .location-card { padding: 30px; background: white; border: 1px solid var(--line); border-radius: 9px; }
 .location-top { min-height: 65px; display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
 .partner-label { padding: 7px 9px; background: #f2f4f7; color: #66707c; font-size: 8px; letter-spacing: .12em; font-weight: 800; }
